@@ -37,12 +37,7 @@ int _printf(const char *format, ...)
 				case 's':
 					custom_str = va_arg(custom_args, char *);
 					if (custom_str == NULL)
-					{
 						custom_str = "(null)";
-						size_t str_len = strlen(custom_str);
-
-						write(1, custom_str, str_len);
-					}
 					while (*custom_str)
 					{
 						count += _putchar(*custom_str);
