@@ -3,11 +3,10 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * _printf - a function that produces output according to a format
+ * _print_int - a function that produces output according to a format
  * @format: a character string composed of zero or more directives
  *
- * Return: the number of characters printed
- * (excluding the null byte used to end output to strings)
+ * Return: the number of count integers
  */
 int _print_int(const char *format, ...)
 {
