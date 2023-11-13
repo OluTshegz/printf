@@ -3,5 +3,6 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+int _print_int(const char *format, ...);
 
 #endif /* _MAIN_H_ */
