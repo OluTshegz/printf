@@ -1,7 +1,7 @@
-#ifndef "custom_main.h"
-#define "custom_main.h"
+#ifndef _CUSTOM_MAIN_H_
+#define _CUSTOM_MAIN_H_
 
 int _putchar(char c);
 int _printf(const char *format, ...);
 
-#endif /* "custom_main.h" */
+#endif /* _CUSTOM_MAIN_H_ */
