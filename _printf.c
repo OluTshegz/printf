@@ -40,6 +40,7 @@ int _printf(const char *format, ...)
 					{
 						custom_str = "(null)";
 						size_t str_len = strlen(custom_str);
+
 						write(1, custom_str, str_len);
 					}
 					while (*custom_str)
