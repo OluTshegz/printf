@@ -1,0 +1,44 @@
+.\" Manpage for Custom Printf Function
+.\"
+.TH man 1 "14 November 2023" "1.0" "Custom Printf Project man_page"
+.SH NAME
+_printf
+\- A custom function for formatted output.
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, ...);
+
+_printf[argument]...
+
+.SH DESCRIPTION
+The _printf function outputs formatted data to the standard output based on the format string and additional arguments provided. This implementation includes a custom version of the printf function, as well as the necessary basic and main functions.
+
+Return: The number of characters printed (excluding the null byte used to terminate output to a string).
+
+Conversion specifiers: Several conversion specifiers are supported for various data types.
+
+%c - Print a single character.
+
+%s - Print a string.
+
+%d - Print an integer as a signed decimal (base 10) number.
+
+%i - Same as 'd', print an integer in base 10.
+
+%% - Print a percent sign (%).
+
+A conversion specifier begins with a percent sign and ends with the conversion characters shown below.
+
+.SH EXAMPLES
+_printf("Character: %c", character);
+
+_printf("String: %s", string);
+
+_printf("Integer: %d", integer); (or use "%i" for printing integers, depending on the case).
+
+.SH SEE ALSO
+printf(1), _printf(2), printf(3), sprintf(), snprintf(), vsprintf(), vsnprintf().
+
+.SH AUTHOR
+Project and page by Tayo Olusegun - Student at ALX Software Engineering Programme.
